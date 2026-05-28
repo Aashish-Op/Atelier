@@ -4,14 +4,13 @@ import { motion, useSpring } from 'motion/react';
 
 export function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   // We use spring for smoother follow
   const cursorX = useSpring(-100, { stiffness: 500, damping: 28, mass: 0.5 });
   const cursorY = useSpring(-100, { stiffness: 500, damping: 28, mass: 0.5 });
 
   useEffect(() => {
-    setIsVisible(true);
     const updateMousePosition = (e: MouseEvent) => {
       cursorX.set(e.clientX - 16);
       cursorY.set(e.clientY - 16);
