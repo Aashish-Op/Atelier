@@ -1,0 +1,6 @@
+{
+  "name": "Atelier",
+  "description": "Liquid Reality - Brutalist architectural precision and fluid luxury",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
